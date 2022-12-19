@@ -140,10 +140,10 @@ def generate_ffmpeg(
     mp4_name,
     kwargs,
 ):
-    try:
-        subprocess.Popen(["ffmpeg -version"])
-    except:
-        raise Exception(f"Error running ffmpeg, did you forget to install it? Try brew install ffmpeg or choco install ffmpeg")
+    #try:
+    #    subprocess.Popen(["ffmpeg -version"])
+    #except:
+    #    raise Exception(f"Error running ffmpeg, did you forget to install it? Try brew install ffmpeg or choco install ffmpeg")
 
     subprocess.run(
         f"ffmpeg -stream_loop {num_loop} -y -r {fps} -f image2 -s {mp4_width}x{mp4_height} -i {temp_img_folder}/%d.png "
@@ -230,6 +230,9 @@ def convert_pngs_to_output(
 
     mp4_name = index + ".mp4"
     gif_name = get_png_file_name(file_name) + ".gif"
+
+    print(f"Saving gif in {gif_name}")
+
 
     # ffmpeg uses quality 0 - 50, where 0 is the best, 50 is the worst.
     # so 50 - quality / 2 gives you the correct scale. Ex. quality = 100 will be 50 - 100 / 2 = 50

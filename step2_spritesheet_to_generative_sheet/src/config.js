@@ -41,13 +41,9 @@ let layerConfigurations = [
     namePrefix: "", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
-      { name: "Landscape" },
-      {
-        name: "Ball",
-      },
-      {
-        name: "Hat",
-      },
+      { name: "QioraBackground" },
+      { name: "Character" },
+      { name: "QioraForeground" },
     ],
   },
 ]
@@ -169,7 +165,8 @@ const incompatible = {
  * further in the stack
  */
 const forcedCombinations = {
-  // floral: ["MetallicShades", "Golden Sakura"],
+   Plante: ["Plante"],
+   Vent: ["Vent"],
 };
 
 /**

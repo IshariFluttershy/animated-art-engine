@@ -3,6 +3,7 @@
 temp/
 output/
 build/
+*.png
 
 # NODE GITIGNORE: https://github.com/github/gitignore/blob/main/Node.gitignore
 # Logs
