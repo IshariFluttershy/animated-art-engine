@@ -153,6 +153,7 @@ const emptyLayerName = "NONE";
  */
 const incompatible = {
   // Flashing: ["Multicolor"],
+  NONE: ["Plante", "Vent"],
 };
 
 /**

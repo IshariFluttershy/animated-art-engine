@@ -1,9 +1,9 @@
 {
-    "totalSupply": 2,
+    "totalSupply": 7,
     "height": 700,
     "width": 800,
-    "framesPerSecond":24,
-    "numberOfFrames": 24,
+    "framesPerSecond":25,
+    "numberOfFrames": 25,
     "description": "Your description here",
     "baseUri": "ipfs://NewUriToReplace",
     "startIndex": 0,
