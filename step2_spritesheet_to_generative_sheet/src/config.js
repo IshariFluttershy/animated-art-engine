@@ -37,7 +37,7 @@ const {
 /* ONLY VARIABLE THAT YOU NEED TO EDIT IS HERE */
 let layerConfigurations = [
   {
-    growEditionSizeTo: totalSupply-3,
+    growEditionSizeTo: totalSupply*0.9/2,
     namePrefix: "Female Common", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
@@ -52,39 +52,39 @@ let layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: totalSupply-2,
+    growEditionSizeTo: totalSupply*0.99/2,
     namePrefix: "Female Uncommon", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
       { name: "QioraBackground" },
+      { name: "Back" },
       { name: "FemaleCommonBody" },
       { name: "FemaleCommonHead" },
       { name: "EyesCommon" },
       { name: "FemaleCommonHair" },
       { name: "FemaleUncommonArmor" },
       { name: "Headgear" },
-      { name: "Back" },
       { name: "QioraForeground" },
     ],
   },
   {
-    growEditionSizeTo: totalSupply,
+    growEditionSizeTo: totalSupply*1/2,
     namePrefix: "Female Rare", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
       { name: "QioraBackground" },
+      { name: "Back" },
       { name: "FemaleRareBody" },
       { name: "FemaleRareHead" },
       { name: "EyesRare" },
       { name: "FemaleRareHair" },
       { name: "FemaleRareArmor" },
       { name: "Headgear" },
-      { name: "Back" },
       { name: "QioraForeground" },
     ],
   },
   {
-    growEditionSizeTo: totalSupply-2,
+    growEditionSizeTo: totalSupply/2 + totalSupply/2*0.9,
     namePrefix: "Male Common", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
@@ -99,34 +99,34 @@ let layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: totalSupply-2,
+    growEditionSizeTo: totalSupply/2 + totalSupply/2*0.99,
     namePrefix: "Male Uncommon", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
       { name: "QioraBackground" },
+      { name: "Back" },
       { name: "MaleCommonBody" },
       { name: "MaleCommonHead" },
       { name: "EyesCommon" },
       { name: "MaleCommonHair" },
       { name: "MaleUncommonArmor" },
       { name: "Headgear" },
-      { name: "Back" },
       { name: "QioraForeground" },
     ],
   },
   {
-    growEditionSizeTo: totalSupply-2,
+    growEditionSizeTo: totalSupply/2 + totalSupply/2*1,
     namePrefix: "Male Rare", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
       { name: "QioraBackground" },
+      { name: "Back" },
       { name: "MaleRareBody" },
       { name: "MaleRareHead" },
       { name: "EyesRare" },
       { name: "MaleRareHair" },
       { name: "MaleRareArmor" },
       { name: "Headgear" },
-      { name: "Back" },
       { name: "QioraForeground" },
     ],
   },
@@ -214,7 +214,7 @@ layerConfigurations = layerConfigurationMapping[layersFolder];
  * Set to true for when using multiple layersOrder configuration
  * and you would like to shuffle all the artwork together
  */
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = debug;
 
@@ -238,6 +238,30 @@ const emptyLayerName = "NONE";
 const incompatible = {
   // Flashing: ["Multicolor"],
   NONE: ["Plante", "Vent"],
+  //FemaleCommonBody1: ["FemaleCommonHeadSkin2", "FemaleCommonHeadSkin3", "FemaleCommonHeadSkin4", "FemaleCommonHeadSkin5"],
+  /*FemaleCommonBody1: ["FemaleCommonHead12", "FemaleCommonHead13", "FemaleCommonHead14", "FemaleCommonHead15",
+                      "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24", "FemaleCommonHead25"],*/
+  FemaleCommonBody1: ["FemaleCommonHead12", "FemaleCommonHead13", "FemaleCommonHead14", "FemaleCommonHead15",
+                      "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24", "FemaleCommonHead25"],
+  FemaleCommonBody2: ["FemaleCommonHead11", "FemaleCommonHead13", "FemaleCommonHead14", "FemaleCommonHead15",
+                      "FemaleCommonHead21", "FemaleCommonHead23", "FemaleCommonHead24", "FemaleCommonHead25"],
+  FemaleCommonBody3: ["FemaleCommonHead11", "FemaleCommonHead12", "FemaleCommonHead14", "FemaleCommonHead15",
+                      "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead24", "FemaleCommonHead25"],
+  FemaleCommonBody4: ["FemaleCommonHead11", "FemaleCommonHead12", "FemaleCommonHead13", "FemaleCommonHead15",
+                      "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead25"],
+  FemaleCommonBody5: ["FemaleCommonHead11", "FemaleCommonHead12", "FemaleCommonHead13", "FemaleCommonHead14",
+                      "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24"],
+
+  MaleCommonBody1: ["MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead14", "MaleCommonHead15",
+                    "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead24", "MaleCommonHead25"],
+  MaleCommonBody2: ["MaleCommonHead11", "MaleCommonHead13", "MaleCommonHead14", "MaleCommonHead15",
+                    "MaleCommonHead21", "MaleCommonHead23", "MaleCommonHead24", "MaleCommonHead25"],
+  MaleCommonBody3: ["MaleCommonHead11", "MaleCommonHead12", "MaleCommonHead14", "MaleCommonHead15",
+                    "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead24", "MaleCommonHead25"],
+  MaleCommonBody4: ["MaleCommonHead11", "MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead15",
+                    "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead25"],
+  MaleCommonBody5: ["MaleCommonHead11", "MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead14",
+                    "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead24"],
 };
 
 /**
@@ -252,6 +276,22 @@ const incompatible = {
 const forcedCombinations = {
    Plante: ["Plante"],
    Vent: ["Vent"],
+   //FemaleCommonBody1: ["FemaleCommonHeadSkin1"],
+   /*FemaleCommonBody1: ["FemaleCommonHead11", "FemaleCommonHead21"],
+   FemaleCommonBody2: ["FemaleCommonHead12", "FemaleCommonHead22"],
+   FemaleCommonBody3: ["FemaleCommonHead13", "FemaleCommonHead23"],
+   FemaleCommonBody4: ["FemaleCommonHead14", "FemaleCommonHead24"],
+   FemaleCommonBody5: ["FemaleCommonHead15", "FemaleCommonHead25"],
+   FemaleRareBody1: ["FemaleRareHead11", "FemaleRareHead21"],
+   FemaleRareBody2: ["FemaleRareHead12", "FemaleRareHead22"],
+
+   MaleCommonBody1: ["MaleCommonHead11", "MaleCommonHead21"],
+   MaleCommonBody2: ["MaleCommonHead12", "MaleCommonHead22"],
+   MaleCommonBody3: ["MaleCommonHead13", "MaleCommonHead23"],
+   MaleCommonBody4: ["MaleCommonHead14", "MaleCommonHead24"],
+   MaleCommonBody5: ["MaleCommonHead15", "MaleCommonHead25"],
+   MaleRareBody1: ["MaleRareHead11", "MaleRareHead21"],
+   MaleRareBody2: ["MaleRareHead12", "MaleRareHead22"],*/
 };
 
 /**

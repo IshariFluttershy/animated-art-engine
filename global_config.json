@@ -1,5 +1,5 @@
 {
-    "totalSupply": 7,
+    "totalSupply": 1110,
     "height": 700,
     "width": 800,
     "framesPerSecond":25,
@@ -13,7 +13,7 @@
     "mp4Tool": "ffmpeg",
     "outputType": "mp4",
     "loopGif": true,
-    "numLoopMP4": 1,
+    "numLoopMP4": 0,
     "debug": false,
     "useBatches": false,
     "numFramesPerBatch": 4,
