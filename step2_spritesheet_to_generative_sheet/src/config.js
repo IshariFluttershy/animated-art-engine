@@ -37,12 +37,96 @@ const {
 /* ONLY VARIABLE THAT YOU NEED TO EDIT IS HERE */
 let layerConfigurations = [
   {
-    growEditionSizeTo: totalSupply,
-    namePrefix: "", // Use to add a name to Metadata `name:`
+    growEditionSizeTo: totalSupply-3,
+    namePrefix: "Female Common", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
       { name: "QioraBackground" },
-      { name: "Character" },
+      { name: "FemaleCommonBody" },
+      { name: "FemaleCommonHead" },
+      { name: "EyesCommon" },
+      { name: "FemaleCommonHair" },
+      { name: "FemaleCommonArmor" },
+      { name: "Headgear" },
+      { name: "QioraForeground" },
+    ],
+  },
+  {
+    growEditionSizeTo: totalSupply-2,
+    namePrefix: "Female Uncommon", // Use to add a name to Metadata `name:`
+    layersOrder: [
+      { name: "Background" },
+      { name: "QioraBackground" },
+      { name: "FemaleCommonBody" },
+      { name: "FemaleCommonHead" },
+      { name: "EyesCommon" },
+      { name: "FemaleCommonHair" },
+      { name: "FemaleUncommonArmor" },
+      { name: "Headgear" },
+      { name: "Back" },
+      { name: "QioraForeground" },
+    ],
+  },
+  {
+    growEditionSizeTo: totalSupply,
+    namePrefix: "Female Rare", // Use to add a name to Metadata `name:`
+    layersOrder: [
+      { name: "Background" },
+      { name: "QioraBackground" },
+      { name: "FemaleRareBody" },
+      { name: "FemaleRareHead" },
+      { name: "EyesRare" },
+      { name: "FemaleRareHair" },
+      { name: "FemaleRareArmor" },
+      { name: "Headgear" },
+      { name: "Back" },
+      { name: "QioraForeground" },
+    ],
+  },
+  {
+    growEditionSizeTo: totalSupply-2,
+    namePrefix: "Male Common", // Use to add a name to Metadata `name:`
+    layersOrder: [
+      { name: "Background" },
+      { name: "QioraBackground" },
+      { name: "MaleCommonBody" },
+      { name: "MaleCommonHead" },
+      { name: "EyesCommon" },
+      { name: "MaleCommonHair" },
+      { name: "MaleCommonArmor" },
+      { name: "Headgear" },
+      { name: "QioraForeground" },
+    ],
+  },
+  {
+    growEditionSizeTo: totalSupply-2,
+    namePrefix: "Male Uncommon", // Use to add a name to Metadata `name:`
+    layersOrder: [
+      { name: "Background" },
+      { name: "QioraBackground" },
+      { name: "MaleCommonBody" },
+      { name: "MaleCommonHead" },
+      { name: "EyesCommon" },
+      { name: "MaleCommonHair" },
+      { name: "MaleUncommonArmor" },
+      { name: "Headgear" },
+      { name: "Back" },
+      { name: "QioraForeground" },
+    ],
+  },
+  {
+    growEditionSizeTo: totalSupply-2,
+    namePrefix: "Male Rare", // Use to add a name to Metadata `name:`
+    layersOrder: [
+      { name: "Background" },
+      { name: "QioraBackground" },
+      { name: "MaleRareBody" },
+      { name: "MaleRareHead" },
+      { name: "EyesRare" },
+      { name: "MaleRareHair" },
+      { name: "MaleRareArmor" },
+      { name: "Headgear" },
+      { name: "Back" },
       { name: "QioraForeground" },
     ],
   },
