@@ -258,23 +258,7 @@ const incompatible = {
   FemaleRareBody2: ["FemaleRareHead11", "FemaleRareHead21"],
 
 
-  // headgear 3 women + hair 1,2,3,5 only
-  FemaleCommonHairBackground4: ["Headgear3"],
-  FemaleCommonHairForeground4: ["Headgear3"],
-
-  FemaleRareHairBackground4: ["Headgear3"],
-  FemaleRareHairForeground4: ["Headgear3"],
-
-  FemaleCommonHairBackground6: ["Headgear3"],
-  FemaleCommonHairForeground6: ["Headgear3"],
-
-  FemaleRareHairBackground6: ["Headgear3"],
-  FemaleRareHairForeground6: ["Headgear3"],
-
-
-
   // Females hair/armor superpositions
-
   //Common
   // Background
   FemaleCommonHairBackground1: ["FemaleCommonArmor30", "FemaleCommonArmor31", "FemaleCommonArmor32", "FemaleCommonArmor33",
@@ -289,7 +273,7 @@ const incompatible = {
                          "Headgear11"],
 
   FemaleCommonHairBackground3: ["Headgear11"],
-  FemaleCommonHairBackground4: ["Headgear11"],
+  FemaleCommonHairBackground4: ["Headgear11", "Headgear3"],
 
   FemaleCommonHairBackground5: ["FemaleCommonArmor30", "FemaleCommonArmor31", "FemaleCommonArmor32", "FemaleCommonArmor33",
                          "FemaleUncommonArmor10", "FemaleUncommonArmor11", "FemaleUncommonArmor12", 
@@ -300,7 +284,7 @@ const incompatible = {
                          "FemaleCommonArmor30", "FemaleCommonArmor31", "FemaleCommonArmor32", "FemaleCommonArmor33",
                          "FemaleUncommonArmor10", "FemaleUncommonArmor11", "FemaleUncommonArmor12", 
                          "FemaleUncommonArmor20", "FemaleUncommonArmor21", "FemaleUncommonArmor22", 
-                         "Headgear11"], 
+                         "Headgear11", "Headgear3"], 
                          
   FemaleCommonHairBackgroundNone: ["FemaleCommonHairForegroundNone", 
                         "FemaleCommonArmor10", "FemaleCommonArmor11", "FemaleCommonArmor12", "FemaleCommonArmor13"],
@@ -336,9 +320,9 @@ const incompatible = {
   FemaleCommonHairForeground1: ["Headgear11"],
   FemaleCommonHairForeground2: ["Headgear11"],
   FemaleCommonHairForeground3: ["Headgear11"],
-  FemaleCommonHairForeground4: ["Headgear11"],
+  FemaleCommonHairForeground4: ["Headgear11", "Headgear3"],
   FemaleCommonHairForeground5: ["Headgear11"],
-  FemaleCommonHairForeground6: ["Headgear11"],
+  FemaleCommonHairForeground6: ["Headgear11", "Headgear3"],
 
 
 
@@ -346,8 +330,9 @@ const incompatible = {
   //Background
   FemaleRareHairBackground1: ["FemaleRareArmor10", "FemaleRareArmor11", "Headgear11"],
   FemaleRareHairBackground2: ["FemaleRareArmor10", "FemaleRareArmor11", "Headgear11"],
+  FemaleRareHairBackground4: ["Headgear3"],
   FemaleRareHairBackground5: ["FemaleRareArmor10", "FemaleRareArmor11", "Headgear11"],
-  FemaleRareHairBackground6: ["FemaleRareArmor10", "FemaleRareArmor11", "FemaleRareArmor20", "FemaleRareArmor21", "Headgear11"],
+  FemaleRareHairBackground6: ["FemaleRareArmor10", "FemaleRareArmor11", "FemaleRareArmor20", "FemaleRareArmor21", "Headgear11", "Headgear3"],
 
   //Foreground
   FemaleRareArmor10: ["FemaleRareHairForeground3", "FemaleRareHairForeground4"],
@@ -357,6 +342,9 @@ const incompatible = {
                       "FemaleRareHairForeground5", "FemaleRareHairForeground4"],
   FemaleRareArmor21: ["FemaleRareHairForeground1", "FemaleRareHairForeground2", "FemaleRareHairForeground3",
                       "FemaleRareHairForeground5", "FemaleRareHairForeground4"],
+
+  FemaleRareHairForeground4: ["Headgear3"],
+  FemaleRareHairForeground6: ["Headgear3"],
 
   /*FemaleRareHairForeground1: ["FemaleRareArmor20", "FemaleRareArmor21", "Headgear11"],
   FemaleRareHairForeground2: ["FemaleRareArmor20", "FemaleRareArmor21", "Headgear11"],
