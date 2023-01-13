@@ -45,8 +45,8 @@ let layerConfigurations = [
       { name: "FemaleCommonBody" },
       { name: "FemaleCommonHead" },
       { name: "EyesCommon" },
-      { name: "FemaleCommonArmor" },
       { name: "FemaleCommonHair" },
+      { name: "FemaleCommonArmor" },
       { name: "Headgear" },
       { name: "QioraForeground" },
     ],
@@ -61,8 +61,8 @@ let layerConfigurations = [
       { name: "FemaleCommonBody" },
       { name: "FemaleCommonHead" },
       { name: "EyesCommon" },
-      { name: "FemaleUncommonArmor" },
       { name: "FemaleCommonHair" },
+      { name: "FemaleUncommonArmor" },
       { name: "Headgear" },
       { name: "QioraForeground" },
     ],
@@ -77,8 +77,8 @@ let layerConfigurations = [
       { name: "FemaleRareBody" },
       { name: "FemaleRareHead" },
       { name: "EyesRare" },
-      { name: "FemaleRareArmor" },
       { name: "FemaleRareHair" },
+      { name: "FemaleRareArmor" },
       { name: "Headgear" },
       { name: "QioraForeground" },
     ],
@@ -92,8 +92,8 @@ let layerConfigurations = [
       { name: "MaleCommonBody" },
       { name: "MaleCommonHead" },
       { name: "EyesCommon" },
-      { name: "MaleCommonArmor" },
       { name: "MaleCommonHair" },
+      { name: "MaleCommonArmor" },
       { name: "Headgear" },
       { name: "QioraForeground" },
     ],
@@ -108,8 +108,8 @@ let layerConfigurations = [
       { name: "MaleCommonBody" },
       { name: "MaleCommonHead" },
       { name: "EyesCommon" },
-      { name: "MaleUncommonArmor" },
       { name: "MaleCommonHair" },
+      { name: "MaleUncommonArmor" },
       { name: "Headgear" },
       { name: "QioraForeground" },
     ],
@@ -124,8 +124,8 @@ let layerConfigurations = [
       { name: "MaleRareBody" },
       { name: "MaleRareHead" },
       { name: "EyesRare" },
-      { name: "MaleRareArmor" },
       { name: "MaleRareHair" },
+      { name: "MaleRareArmor" },
       { name: "Headgear" },
       { name: "QioraForeground" },
     ],
@@ -238,9 +238,6 @@ const emptyLayerName = "NONE";
 const incompatible = {
   // Flashing: ["Multicolor"],
   NONE: ["Plante", "Vent"],
-  //FemaleCommonBody1: ["FemaleCommonHeadSkin2", "FemaleCommonHeadSkin3", "FemaleCommonHeadSkin4", "FemaleCommonHeadSkin5"],
-  /*FemaleCommonBody1: ["FemaleCommonHead12", "FemaleCommonHead13", "FemaleCommonHead14", "FemaleCommonHead15",
-                      "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24", "FemaleCommonHead25"],*/
   FemaleCommonBody1: ["FemaleCommonHead12", "FemaleCommonHead13", "FemaleCommonHead14", "FemaleCommonHead15",
                       "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24", "FemaleCommonHead25"],
   FemaleCommonBody2: ["FemaleCommonHead11", "FemaleCommonHead13", "FemaleCommonHead14", "FemaleCommonHead15",
@@ -253,15 +250,30 @@ const incompatible = {
                       "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24"],
 
   MaleCommonBody1: ["MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead14", "MaleCommonHead15",
-                    "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead24", "MaleCommonHead25"],
+                    "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead24", "MaleCommonHead25",
+                    "Headgear3"],
   MaleCommonBody2: ["MaleCommonHead11", "MaleCommonHead13", "MaleCommonHead14", "MaleCommonHead15",
-                    "MaleCommonHead21", "MaleCommonHead23", "MaleCommonHead24", "MaleCommonHead25"],
+                    "MaleCommonHead21", "MaleCommonHead23", "MaleCommonHead24", "MaleCommonHead25",
+                    "Headgear3"],
   MaleCommonBody3: ["MaleCommonHead11", "MaleCommonHead12", "MaleCommonHead14", "MaleCommonHead15",
-                    "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead24", "MaleCommonHead25"],
+                    "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead24", "MaleCommonHead25",
+                    "Headgear3"],
   MaleCommonBody4: ["MaleCommonHead11", "MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead15",
-                    "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead25"],
+                    "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead25",
+                    "Headgear3"],
   MaleCommonBody5: ["MaleCommonHead11", "MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead14",
-                    "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead24"],
+                    "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead24",
+                    "Headgear3"],
+
+  // heagear 3 women + hair 1,2,3,5 only
+  FemaleCommonHair4: ["Headgear3"],
+  FemaleRareHair4: ["Headgear3"],
+
+  FemaleCommonHair6: ["Headgear3"],
+  FemaleRareHair6: ["Headgear3"],
+
+
+
 };
 
 /**
@@ -276,22 +288,7 @@ const incompatible = {
 const forcedCombinations = {
    Plante: ["Plante"],
    Vent: ["Vent"],
-   //FemaleCommonBody1: ["FemaleCommonHeadSkin1"],
-   /*FemaleCommonBody1: ["FemaleCommonHead11", "FemaleCommonHead21"],
-   FemaleCommonBody2: ["FemaleCommonHead12", "FemaleCommonHead22"],
-   FemaleCommonBody3: ["FemaleCommonHead13", "FemaleCommonHead23"],
-   FemaleCommonBody4: ["FemaleCommonHead14", "FemaleCommonHead24"],
-   FemaleCommonBody5: ["FemaleCommonHead15", "FemaleCommonHead25"],
-   FemaleRareBody1: ["FemaleRareHead11", "FemaleRareHead21"],
-   FemaleRareBody2: ["FemaleRareHead12", "FemaleRareHead22"],
 
-   MaleCommonBody1: ["MaleCommonHead11", "MaleCommonHead21"],
-   MaleCommonBody2: ["MaleCommonHead12", "MaleCommonHead22"],
-   MaleCommonBody3: ["MaleCommonHead13", "MaleCommonHead23"],
-   MaleCommonBody4: ["MaleCommonHead14", "MaleCommonHead24"],
-   MaleCommonBody5: ["MaleCommonHead15", "MaleCommonHead25"],
-   MaleRareBody1: ["MaleRareHead11", "MaleRareHead21"],
-   MaleRareBody2: ["MaleRareHead12", "MaleRareHead22"],*/
 };
 
 /**
