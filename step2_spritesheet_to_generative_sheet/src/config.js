@@ -62,7 +62,7 @@ let layerConfigurations = [
       { name: "FemaleCommonBody" },
       { name: "FemaleCommonHead" },
       { name: "EyesCommon" },
-      { name: "FemaleCommonHairBackground" },
+      { name: "FemaleUncommonHairBackground" },
       { name: "FemaleUncommonArmor" },
       { name: "FemaleCommonHairForeground" },
       { name: "Headgear" },
@@ -289,6 +289,12 @@ const incompatible = {
   FemaleCommonHairBackgroundNone: ["FemaleCommonHairForegroundNone", 
                         "FemaleCommonArmor10", "FemaleCommonArmor11", "FemaleCommonArmor12", "FemaleCommonArmor13"],
 
+
+  //Uncommon
+  FemaleUncommonHairBackground3: ["Headgear11"],
+  FemaleUncommonHairBackground4: ["Headgear11", "Headgear3"],
+
+
   // Foreground
   FemaleCommonArmor10: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground2","FemaleCommonHairForeground3",
                         "FemaleCommonHairForeground4","FemaleCommonHairForeground5","FemaleCommonHairForeground6",],
@@ -345,15 +351,7 @@ const incompatible = {
 
   FemaleRareHairForeground4: ["Headgear3"],
   FemaleRareHairForeground6: ["Headgear3"],
-
-  /*FemaleRareHairForeground1: ["FemaleRareArmor20", "FemaleRareArmor21", "Headgear11"],
-  FemaleRareHairForeground2: ["FemaleRareArmor20", "FemaleRareArmor21", "Headgear11"],
-  FemaleRareHairForeground3: ["FemaleRareArmor10", "FemaleRareArmor11", "FemaleRareArmor20", "FemaleRareArmor21", "Headgear11"],
-  FemaleRareHairForeground4: ["FemaleRareArmor10", "FemaleRareArmor11", "FemaleRareArmor20", "FemaleRareArmor21", "Headgear11"],
-  FemaleRareHairForeground5: ["FemaleRareArmor20", "FemaleRareArmor21", "Headgear11"],*/
-
-
-
+  
 
   // Males
   MaleCommonBody1: ["MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead14", "MaleCommonHead15",
