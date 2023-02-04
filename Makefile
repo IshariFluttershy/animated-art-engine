@@ -15,6 +15,11 @@ step23:
 	cd step2_spritesheet_to_generative_sheet && npm run generate && cd ..
 	python step3_generative_sheet_to_output/build.py
 
+step123:
+	python step1_layers_to_spritesheet/build.py
+	cd step2_spritesheet_to_generative_sheet && npm run generate && cd ..
+	python step3_generative_sheet_to_output/build.py
+
 all:
 	python all.py
 
