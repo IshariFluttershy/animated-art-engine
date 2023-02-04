@@ -231,9 +231,6 @@ def convert_pngs_to_output(
     mp4_name = index + ".mp4"
     gif_name = get_png_file_name(file_name) + ".gif"
 
-    print(f"Saving gif in {gif_name}")
-
-
     # ffmpeg uses quality 0 - 50, where 0 is the best, 50 is the worst.
     # so 50 - quality / 2 gives you the correct scale. Ex. quality = 100 will be 50 - 100 / 2 = 50
     # however I was having issues with 0 lossless, so pad 3 quality
