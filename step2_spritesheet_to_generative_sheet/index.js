@@ -25,6 +25,9 @@ program
         chalk.bgCyanBright("\n continuing generation using _dna.json file \n")
       )
       : null;
+    console.log(
+      chalk.bgCyanBright(options.continue)
+    )
     buildSetup();
     let dna = null;
     if (options.continue) {

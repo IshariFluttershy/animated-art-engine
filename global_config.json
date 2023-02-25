@@ -1,5 +1,5 @@
 {
-    "totalSupply": 20,
+    "totalSupply": 1111,
     "height": 700,
     "width": 800,
     "framesPerSecond":25,
@@ -22,8 +22,8 @@
     "useFileNumbering": true,
     "enableAudio": false,
     "generateThumbnail": true,
-    "thumbnailHeight": 350,
-    "thumbnailWidth": 400,
+    "thumbnailHeight": 700,
+    "thumbnailWidth": 800,
     "thumbnailUri": "ipfs://ThumbnailUriToReplace",
     "thumbnailOutputType": "gif",
     "generatePFP": false,

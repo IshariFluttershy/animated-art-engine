@@ -244,56 +244,60 @@ const incompatible = {
 
   // Females
   FemaleCommonBody1: ["FemaleCommonHead12", "FemaleCommonHead13", "FemaleCommonHead14", "FemaleCommonHead15",
-                      "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24", "FemaleCommonHead25"],
+                      "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24", "FemaleCommonHead25", "Headgear10"],
   FemaleCommonBody2: ["FemaleCommonHead11", "FemaleCommonHead13", "FemaleCommonHead14", "FemaleCommonHead15",
-                      "FemaleCommonHead21", "FemaleCommonHead23", "FemaleCommonHead24", "FemaleCommonHead25"],
+                      "FemaleCommonHead21", "FemaleCommonHead23", "FemaleCommonHead24", "FemaleCommonHead25", "Headgear10"],
   FemaleCommonBody3: ["FemaleCommonHead11", "FemaleCommonHead12", "FemaleCommonHead14", "FemaleCommonHead15",
-                      "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead24", "FemaleCommonHead25"],
+                      "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead24", "FemaleCommonHead25", "Headgear10"],
   FemaleCommonBody4: ["FemaleCommonHead11", "FemaleCommonHead12", "FemaleCommonHead13", "FemaleCommonHead15",
-                      "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead25"],
+                      "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead25", "Headgear10"],
   FemaleCommonBody5: ["FemaleCommonHead11", "FemaleCommonHead12", "FemaleCommonHead13", "FemaleCommonHead14",
-                      "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24"],
+                      "FemaleCommonHead21", "FemaleCommonHead22", "FemaleCommonHead23", "FemaleCommonHead24", "Headgear10"],
 
-  FemaleRareBody1: ["FemaleRareHead12", "FemaleRareHead22"],
-  FemaleRareBody2: ["FemaleRareHead11", "FemaleRareHead21"],
+  FemaleRareBody1: ["FemaleRareHead12", "FemaleRareHead22", "Headgear10"],
+  FemaleRareBody2: ["FemaleRareHead11", "FemaleRareHead21", "Headgear10"],
 
 
   // Females hair/armor superpositions
   //Common
   // Background
-  FemaleCommonHairBackground1: ["FemaleCommonArmor30", "FemaleCommonArmor31", "FemaleCommonArmor32", "FemaleCommonArmor33",
+  FemaleCommonHairBackground1: ["FemaleCommonArmor20", "FemaleCommonArmor21", "FemaleCommonArmor22", "FemaleCommonArmor23",
+                        "FemaleCommonArmor30", "FemaleCommonArmor31", "FemaleCommonArmor32", "FemaleCommonArmor33",
                          "FemaleUncommonArmor10", "FemaleUncommonArmor11", "FemaleUncommonArmor12", 
                          "FemaleUncommonArmor20", "FemaleUncommonArmor21", "FemaleUncommonArmor22", 
-                        "Headgear11", "Headgear10"],
+                        "Headgear11", "Headgear10", "Headgear3", "Headgear5", "Headgear8"],
 
   FemaleCommonHairBackground2: ["FemaleCommonArmor20", "FemaleCommonArmor21", "FemaleCommonArmor22", "FemaleCommonArmor23",
                          "FemaleCommonArmor30", "FemaleCommonArmor31", "FemaleCommonArmor32", "FemaleCommonArmor33",
                          "FemaleUncommonArmor10", "FemaleUncommonArmor11", "FemaleUncommonArmor12", 
                          "FemaleUncommonArmor20", "FemaleUncommonArmor21", "FemaleUncommonArmor22", 
-                         "Headgear11", "Headgear10"],
+                         "Headgear11", "Headgear10", "Headgear3", "Headgear5", "Headgear8"],
 
   FemaleCommonHairBackground3: ["Headgear11", "Headgear10"],
-  FemaleCommonHairBackground4: ["Headgear11", "Headgear3", "Headgear10"],
+  FemaleCommonHairBackground4: ["Headgear11", "Headgear3", "Headgear10", "Headgear5", "Headgear8"],
 
   FemaleCommonHairBackground5: ["FemaleCommonArmor30", "FemaleCommonArmor31", "FemaleCommonArmor32", "FemaleCommonArmor33",
                          "FemaleUncommonArmor10", "FemaleUncommonArmor11", "FemaleUncommonArmor12", 
                          "FemaleUncommonArmor20", "FemaleUncommonArmor21", "FemaleUncommonArmor22",
-                         "Headgear11", "Headgear10"],
+                         "Headgear11", "Headgear10", "Headgear8"],
                          
-  FemaleCommonHairBackground6: ["FemaleCommonArmor20", "FemaleCommonArmor21", "FemaleCommonArmor22", "FemaleCommonArmor23",
+  /*FemaleCommonHairBackground6: ["FemaleCommonArmor20", "FemaleCommonArmor21", "FemaleCommonArmor22", "FemaleCommonArmor23",
                          "FemaleCommonArmor30", "FemaleCommonArmor31", "FemaleCommonArmor32", "FemaleCommonArmor33",
                          "FemaleUncommonArmor10", "FemaleUncommonArmor11", "FemaleUncommonArmor12", 
                          "FemaleUncommonArmor20", "FemaleUncommonArmor21", "FemaleUncommonArmor22", 
-                         "Headgear11", "Headgear3", "Headgear10"], 
+                         "Headgear11", "Headgear3", "Headgear10"], */
                          
   FemaleCommonHairBackgroundNone: ["FemaleCommonHairForegroundNone", 
-                        "FemaleCommonArmor10", "FemaleCommonArmor11", "FemaleCommonArmor12", "FemaleCommonArmor13"],
+                        "FemaleCommonArmor10", "FemaleCommonArmor11", "FemaleCommonArmor12", "FemaleCommonArmor13", 
+                        "Headgear10"],
 
 
   //Uncommon
   FemaleUncommonHairBackground3: ["Headgear11", "Headgear10"],
-  FemaleUncommonHairBackground4: ["Headgear11", "Headgear3", "Headgear10"],
-
+  FemaleUncommonHairBackground4: ["Headgear11", "Headgear3", "Headgear10", "Headgear5", "Headgear8"],
+  FemaleUncommonHairBackgroundNone: ["FemaleCommonHairForegroundNone", 
+                        "FemaleCommonArmor10", "FemaleCommonArmor11", "FemaleCommonArmor12", "FemaleCommonArmor13", 
+                        "Headgear10"],
 
   // Foreground
   FemaleCommonArmor10: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground2","FemaleCommonHairForeground3",
@@ -305,80 +309,83 @@ const incompatible = {
   FemaleCommonArmor13: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground2","FemaleCommonHairForeground3",
                         "FemaleCommonHairForeground4","FemaleCommonHairForeground5","FemaleCommonHairForeground6",],
 
-  FemaleCommonArmor20: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4", "FemaleCommonHairForeground5"],
-  FemaleCommonArmor21: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4", "FemaleCommonHairForeground5"],
-  FemaleCommonArmor22: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4", "FemaleCommonHairForeground5"],
-  FemaleCommonArmor23: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4", "FemaleCommonHairForeground5"],
+  FemaleCommonArmor20: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4", 
+                        "FemaleCommonHairForeground5", "FemaleCommonHairForeground6"],
+  FemaleCommonArmor21: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4",
+                        "FemaleCommonHairForeground5", "FemaleCommonHairForeground6"],
+  FemaleCommonArmor22: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4",
+                        "FemaleCommonHairForeground5", "FemaleCommonHairForeground6"],
+  FemaleCommonArmor23: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4",
+                        "FemaleCommonHairForeground5", "FemaleCommonHairForeground6"],
 
   FemaleCommonArmor30: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
   FemaleCommonArmor31: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
   FemaleCommonArmor32: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
   FemaleCommonArmor33: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
 
-  FemaleUncommonArmor10: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
-  FemaleUncommonArmor11: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
-  FemaleUncommonArmor12: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
+  FemaleUncommonArmor10: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4", "FemaleCommonHairForeground6"],
+  FemaleUncommonArmor11: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4", "FemaleCommonHairForeground6"],
+  FemaleUncommonArmor12: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4", "FemaleCommonHairForeground6"],
 
-  FemaleUncommonArmor20: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
-  FemaleUncommonArmor21: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
-  FemaleUncommonArmor22: ["FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
+  FemaleUncommonArmor20: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
+  FemaleUncommonArmor21: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
+  FemaleUncommonArmor22: ["FemaleCommonHairForeground1", "FemaleCommonHairForeground3", "FemaleCommonHairForeground4"],
 
-  FemaleCommonHairForeground1: ["Headgear11", "Headgear10"],
-  FemaleCommonHairForeground2: ["Headgear11", "Headgear10"],
+  FemaleCommonHairForeground1: ["Headgear11", "Headgear10", "Headgear3", "Headgear5", "Headgear8"],
+  FemaleCommonHairForeground2: ["Headgear11", "Headgear10", "Headgear3", "Headgear5", "Headgear8"],
   FemaleCommonHairForeground3: ["Headgear11", "Headgear10"],
-  FemaleCommonHairForeground4: ["Headgear11", "Headgear3", "Headgear10"],
-  FemaleCommonHairForeground5: ["Headgear11", "Headgear10"],
+  FemaleCommonHairForeground4: ["Headgear11", "Headgear3", "Headgear10", "Headgear5", "Headgear8"],
+  FemaleCommonHairForeground5: ["Headgear11", "Headgear10", "Headgear8"],
   FemaleCommonHairForeground6: ["Headgear11", "Headgear3", "Headgear10"],
 
 
 
   //Rare
   //Background
-  FemaleRareHairBackground1: ["FemaleRareArmor10", "FemaleRareArmor11", "Headgear11", "Headgear10"],
-  FemaleRareHairBackground2: ["FemaleRareArmor10", "FemaleRareArmor11", "Headgear11", "Headgear10"],
+  FemaleRareHairBackground1: ["FemaleRareArmor10", "FemaleRareArmor11", "Headgear11", "Headgear10", "Headgear3", "Headgear8"],
+  FemaleRareHairBackground2: ["FemaleRareArmor10", "FemaleRareArmor11", "Headgear11", "Headgear10", "Headgear3", "Headgear8"],
   FemaleRareHairBackground3: ["Headgear11", "Headgear10"],
-  FemaleRareHairBackground4: ["Headgear3", "Headgear11", "Headgear10"],
-  FemaleRareHairBackground5: ["FemaleRareArmor10", "FemaleRareArmor11", "Headgear11", "Headgear10"],
-  FemaleRareHairBackground6: ["FemaleRareArmor10", "FemaleRareArmor11", "FemaleRareArmor20", "FemaleRareArmor21", "Headgear11", "Headgear3", "Headgear10"],
+  FemaleRareHairBackground4: ["Headgear3", "Headgear11", "Headgear10", "Headgear8"],
+  FemaleRareHairBackground5: ["FemaleRareArmor10", "FemaleRareArmor11", "Headgear11", "Headgear10", "Headgear8"],
 
   //Foreground
   FemaleRareArmor10: ["FemaleRareHairForeground3", "FemaleRareHairForeground4"],
   FemaleRareArmor11: ["FemaleRareHairForeground3", "FemaleRareHairForeground4"],
 
   FemaleRareArmor20: ["FemaleRareHairForeground1", "FemaleRareHairForeground2", "FemaleRareHairForeground3",
-                      "FemaleRareHairForeground5", "FemaleRareHairForeground4"],
+                      "FemaleRareHairForeground5", "FemaleRareHairForeground4", "FemaleRareHairForeground6"],
   FemaleRareArmor21: ["FemaleRareHairForeground1", "FemaleRareHairForeground2", "FemaleRareHairForeground3",
-                      "FemaleRareHairForeground5", "FemaleRareHairForeground4"],
+                      "FemaleRareHairForeground5", "FemaleRareHairForeground4", "FemaleRareHairForeground6"],
 
-  FemaleRareHairForeground1: ["Headgear11", "Headgear10"],
-  FemaleRareHairForeground2: ["Headgear11", "Headgear10"],
+  FemaleRareHairForeground1: ["Headgear11", "Headgear10", "Headgear3", "Headgear8"],
+  FemaleRareHairForeground2: ["Headgear11", "Headgear10", "Headgear3", "Headgear8"],
   FemaleRareHairForeground3: ["Headgear11", "Headgear10"],
-  FemaleRareHairForeground4: ["Headgear3", "Headgear11", "Headgear10"],
-  FemaleRareHairForeground5: ["Headgear11", "Headgear10"],
+  FemaleRareHairForeground4: ["Headgear3", "Headgear11", "Headgear10", "Headgear8"],
+  FemaleRareHairForeground5: ["Headgear11", "Headgear10", "Headgear8"],
   FemaleRareHairForeground6: ["Headgear3", "Headgear11", "Headgear10"],
   
 
   // Males
   MaleCommonBody1: ["MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead14", "MaleCommonHead15",
                     "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead24", "MaleCommonHead25",
-                    "Headgear3", "Headgear9"],
+                    "Headgear3", "Headgear4", "Headgear9", "Headgear8"],
   MaleCommonBody2: ["MaleCommonHead11", "MaleCommonHead13", "MaleCommonHead14", "MaleCommonHead15",
                     "MaleCommonHead21", "MaleCommonHead23", "MaleCommonHead24", "MaleCommonHead25",
-                    "Headgear3", "Headgear9"],
+                    "Headgear3", "Headgear4", "Headgear9", "Headgear8"],
   MaleCommonBody3: ["MaleCommonHead11", "MaleCommonHead12", "MaleCommonHead14", "MaleCommonHead15",
                     "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead24", "MaleCommonHead25",
-                    "Headgear3", "Headgear9"],
+                    "Headgear3", "Headgear4", "Headgear9", "Headgear8"],
   MaleCommonBody4: ["MaleCommonHead11", "MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead15",
                     "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead25",
-                    "Headgear3", "Headgear9"],
+                    "Headgear3", "Headgear4", "Headgear9", "Headgear8"],
   MaleCommonBody5: ["MaleCommonHead11", "MaleCommonHead12", "MaleCommonHead13", "MaleCommonHead14",
                     "MaleCommonHead21", "MaleCommonHead22", "MaleCommonHead23", "MaleCommonHead24",
-                    "Headgear3", "Headgear9"],
+                    "Headgear3", "Headgear4", "Headgear9", "Headgear8"],
 
   MaleRareBody1: ["MaleRareHead12", "MaleRareHead22", 
-                    "Headgear3", "Headgear9"],
+                    "Headgear3", "Headgear4", "Headgear9", "Headgear8"],
   MaleRareBody2: ["MaleRareHead11", "MaleRareHead21", 
-                  "Headgear3", "Headgear9"],
+                  "Headgear3", "Headgear4", "Headgear9", "Headgear8"],
 
   MaleCommonHair1: ["Headgear11", "Headgear10"],
   MaleCommonHair2: ["Headgear11", "Headgear10"],
